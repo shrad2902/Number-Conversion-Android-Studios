@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="730dp"
+        app:srcCompat="@drawable/bb"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <CheckBox
+        android:id="@+id/CDecimal"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:buttonTint="@color/your_color"
+        android:text="Decimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <CheckBox
+        android:id="@+id/CBinary"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:buttonTint="@color/your_color"
+        android:text="Binary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <CheckBox
+        android:id="@+id/CHexa"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:buttonTint="@color/your_color"
+        android:text="Hexa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <CheckBox
+        android:id="@+id/COctal"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:buttonTint="@color/your_color"
+        android:text="Octal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="166dp"
+        android:layout_height="27dp"
+        android:text="Select Number Type :"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="131dp"
+        android:layout_height="23dp"
+        android:text="Convert To :"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="120dp"
+        android:layout_height="255dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359">
+
+
+        <RadioButton
+            android:id="@+id/RDecimal"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:buttonTint="@color/your_color"
+            android:checked="true"
+            android:text="Decimal" />
+
+        <RadioButton
+            android:id="@+id/RBinary"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:buttonTint="@color/your_color"
+            android:text="Binary" />
+
+
+        <RadioButton
+            android:id="@+id/ROctal"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:buttonTint="@color/your_color"
+            android:text="Octal" />
+
+        <RadioButton
+            android:id="@+id/RHexa"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:buttonTint="@color/your_color"
+            android:text="Hexa" />
+
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946"
+        app:srcCompat="@drawable/equal" />
+
+    <EditText
+        android:id="@+id/Number"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Enter The Number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#FCECEF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
